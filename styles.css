@@ -7,21 +7,43 @@
 }
 
 /*This controls The Basics.*/
-.title1{
-  /*float: left;*/
+.title1 > p {
+  line-height: 5pt;
 }
 
-/*This controls The Story.*/
+/*This controls The Story and content.*/
 .title2{
   width: 30%;
+}
+
+/*This controls the story.*/
+.title2 > h2 {
+  margin-left: 8%;
+  padding-left: 8%;
+}
+
+/*This controls the story text.*/
+.title2 > p {
   border-left: 2px solid #C8C8C8;
-  margin-left: 5%;
-  padding-left: 5%;
-  /*float: right;*/
+  margin-left: 8%;
+  padding-left: 8%;
+  line-height: 15pt;
 }
 
 /*This holds the three items.*/
 .box_of_three{
-    box-sizing: border-box;
+  margin-top: 20pt;
+  box-sizing: border-box;
   display: flex;
+}
+
+/*This controls the header.*/
+.your_name{
+  width: 80%;
+  color: white;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
