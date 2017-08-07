@@ -27,8 +27,8 @@ fetch('https://api.github.com/users/kharrison7')
                 <div class="title1">
                   <h2>The Basics</h2>
                   <p>Name: ${data.name}</p>
-                  <p>Github URL: ${data.login}</p>
-                  <a>Email: ${data.email}</a>
+                  <a href="${data.html_url}" class="bright">Github URL: ${data.login}</a>
+                  <p>Email: ${data.email}</p>
                   <p>Company: ${data.company}</p>
                   <p>Website: ${data.url}</p>
                 </div>
