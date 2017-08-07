@@ -1,3 +1,27 @@
+/*This controls the profile image.*/
 .img-circle {
     border-radius: 50%;
+    width: 120pt;
+    height: 120pt;
+    margin-left: 45%;
+}
+
+/*This controls The Basics.*/
+.title1{
+  /*float: left;*/
+}
+
+/*This controls The Story.*/
+.title2{
+  width: 30%;
+  border-left: 2px solid #C8C8C8;
+  margin-left: 5%;
+  padding-left: 5%;
+  /*float: right;*/
+}
+
+/*This holds the three items.*/
+.box_of_three{
+    box-sizing: border-box;
+  display: flex;
 }

@@ -40,6 +40,8 @@ else{
                     <h1>${data.name}</h1>
                   </div>
 
+<div class="box_of_three">
+
                 <div class="title1">
                   <h2>The Basics</h2>
                   <p>Name: ${data.name}</p>
@@ -52,12 +54,15 @@ else{
                 <div class="title2">
                   <h2>The Story</h2>
                   <p>Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus arcu tellus, tincidunt quis erat quis, rhoncus cursus lacus. Fusce tincidunt metus vel convallis venenatis. Phasellus vitae tristique ligula. Integer non purus quis nibh ultrices commodo.</p>
-
                 </div>
 
                  <div class="profile_Image">
                      <img class="img-circle" src="${data.avatar_url}" alt="profile_pic"/>
                  </div>
+
+   </div>
+
+
 
               `
 
