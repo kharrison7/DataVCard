@@ -14,17 +14,35 @@ fetch('https://api.github.com/users/kharrison7')
 
       // Examine the text in the response
       response.json().then(function(data) {
-        console.log("data" + data.login);
+        console.log("data: " + data.login);
 
 
-
-
+// This makes the items appear on the page.
       let markup = `
-                <div class="title">
-                  <p>User Name: ${data.login}</p>
-                  <a>Email: ${data.url}</a>
+
+                  <div class="your_name">
+                    <h1>${data.name}</h1>
+                  </div>
+
+                <div class="title1">
+                  <h2>The Basics</h2>
+                  <p>Name: ${data.name}</p>
+                  <p>Github URL: ${data.login}</p>
+                  <a>Email: ${data.email}</a>
+                  <p>Company: ${data.company}</p>
+                  <p>Website: ${data.url}</p>
+                </div>
+
+                <div class="title2">
+                  <h2>The Story</h2>
+                  <p>Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus arcu tellus, tincidunt quis erat quis, rhoncus cursus lacus. Fusce tincidunt metus vel convallis venenatis. Phasellus vitae tristique ligula. Integer non purus quis nibh ultrices commodo.</p>
 
                 </div>
+
+                 <div class="profile_Image">
+                     <img src="${data.avatar_url}" alt="profile_pic"/>
+                 </div>
+
               `
 
               document.body.innerHTML = markup;
