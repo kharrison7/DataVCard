@@ -40,7 +40,7 @@ fetch('https://api.github.com/users/kharrison7')
                 </div>
 
                  <div class="profile_Image">
-                     <img src="${data.avatar_url}" alt="profile_pic"/>
+                     <img class="img-circle" src="${data.avatar_url}" alt="profile_pic"/>
                  </div>
 
               `
