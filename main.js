@@ -19,7 +19,13 @@ fetch('https://api.github.com/users/kharrison7')
 
 // This changes values to actual items if API sends null or undefined.
 
-
+let email_address ='';
+if (data.email === null){
+  email_address = "kharrison7@elon.edu";
+}
+else{
+  email_address = data.email;
+}
 
 
 
@@ -38,7 +44,7 @@ fetch('https://api.github.com/users/kharrison7')
                   <h2>The Basics</h2>
                   <p>Name: ${data.name}</p>
                   <p>Github URL: <a href="${data.html_url}" class="bright">${data.login}</a></p>
-                  <p>Email: ${data.email}</p>
+                  <p>Email: ${email_address}</p>
                   <p>Company: ${data.company}</p>
                   <p>Website: <a href="${data.blog}" class="bright">${data.blog}</a></p>
                 </div>
