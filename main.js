@@ -17,6 +17,16 @@ fetch('https://api.github.com/users/kharrison7')
         console.log("data: " + data.login);
 
 
+// This changes values to actual items if API sends null or undefined.
+
+
+
+
+
+
+
+
+
 // This makes the items appear on the page.
       let markup = `
 
@@ -27,10 +37,10 @@ fetch('https://api.github.com/users/kharrison7')
                 <div class="title1">
                   <h2>The Basics</h2>
                   <p>Name: ${data.name}</p>
-                  <a href="${data.html_url}" class="bright">Github URL: ${data.login}</a>
+                  <p>Github URL: <a href="${data.html_url}" class="bright">${data.login}</a></p>
                   <p>Email: ${data.email}</p>
                   <p>Company: ${data.company}</p>
-                  <p>Website: ${data.url}</p>
+                  <p>Website: <a href="${data.blog}" class="bright">${data.blog}</a></p>
                 </div>
 
                 <div class="title2">
